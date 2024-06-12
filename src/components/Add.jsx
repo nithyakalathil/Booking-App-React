@@ -18,7 +18,7 @@ const inputHandler=(event)=>{
 }
 
 const readValue=()=>{
-    axios.post("http://localhost:8081/view",data).then(
+    axios.post("http://localhost:8081/add",data).then(
         (response)=>{
             console.log(response.data)
             if (response.data.status=="Success") {
